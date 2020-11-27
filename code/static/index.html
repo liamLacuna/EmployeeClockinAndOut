@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="robots" content="NOINDEX, NOFOLLOW" />
+  <meta name="robots" content="NONE" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+  <title>WEB Time Clock</title>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" href="clock/style.css" />
+  <script src="clock/jquery_1.7.1.js"></script>
+  <script src="clock/main.js"></script>
+</head>
+
+<body>
+    <div class="login-div">
+      <div id="clockTime"></div>
+
+      <div class="username-container input-wrapper">
+        <label>Username</label>
+        <input id="username" class="login-user-id" type="text" name="username" autocomplete="off" autofocus/>
+      </div>
+
+      <div class="password-container input-wrapper">
+        <label>Password</label>
+        <input id="password" type="password" name="password" autocomplete="off"/>
+      </div>
+
+      <div class="error-message " id="error-msg"></div>
+
+      <div class='button-container'>
+          <input class="login-clock-in-button" type="button" value="Clock IN"/>
+          <input class="login-clock-out-button" type="button" value="Clock OUT"/>
+      </div>
+    </div>
+</body>
+</html>

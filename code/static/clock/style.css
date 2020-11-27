@@ -1,0 +1,261 @@
+* {
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !important;
+}
+
+#clockTime {
+    color:  #00bcd4 !important;
+    display: flex;
+    font-size: 24px;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: 400 !important;
+    font-stretch: 100% !important;
+    font-style: normal;
+    text-align: center;
+    width: 225px;
+    margin-left: 20px;
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+
+.login-div {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+form[name="formTimeClock"] {
+    margin-top: 160px;
+}
+
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    overflow-y:auto;
+}
+
+.login-div {
+    animation: showForm 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 -1px 2px -1px rgba(0, 0, 0, 0.1);
+    height: 476px;
+    margin: 0 auto;
+    padding: 24px 24px 16px;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    width: 272px;
+}
+
+@media screen and (min-height: 800px) {
+    .login-div {
+        margin-top:160px !important;
+    }
+}
+
+/* button area */
+
+.button-container {
+    margin-top: 50px;
+}
+.button-container input {
+    height: 48px;
+    background-color: #42bfc2;
+    background-clip: border-box;
+    border: 1px solid #42bfc2;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-right: 0px;
+    overflow: hidden;
+    outline: 0 none;
+    padding: 5px 0px;
+    position: relative;
+    text-align: center;
+    width: 272px;
+    font-size: 16px;
+}
+
+.login-div .login-clock-in-button {
+    background-color: #42bfc2;
+    border-color: #42bfc2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.15),
+        0 -1px 2px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+}
+.login-div .login-clock-in-button:hover{
+    background-color: #3ab2b5;
+    border-color: #3ab2b5;
+    transition:
+        background-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+.login-div .login-clock-in-button:focus{
+    box-shadow: inset 0 0 0 1px white;
+}
+.login-div .login-clock-out-button {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.15),
+        0 -1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.login-div .login-clock-out-button:hover{
+    background-color: #3b77db;
+    border-color: #4285f4;
+    transition:
+        background-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+.login-div .login-clock-out-button:focus{
+    box-shadow: inset 0 0 0 1px white;
+}
+
+
+/* inputbox area */
+
+.login-div .input-wrapper {
+    background-color: rgba(255,255,255,0.2);
+    background-clip: padding-box;
+    border-bottom: 1px solid #cdd0d3;
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.login-div .input-wrapper:hover {
+    border-color: #9299a0;
+    transition:
+        border-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-div label {
+    color: #7f7f7f;
+    font-family: Roboto, "Hiragino Sans", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-size: 14px;
+    font-stretch: 100%;
+    text-size-adjust: 100%;
+    height: 16px;
+    position: absolute;
+    font-size: 16px;
+    transform: translate(16px, 8px) scale(1);
+    transition: -webkit-transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s,-moz-transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s,-o-transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s,transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s;
+    cursor: text;
+}
+.login-div .focused label {
+    color: #00bcd4;
+    font-size: 12px;
+    font-weight: bold;
+    transform: translate(16px, -16px) scale(1);
+}
+.login-div .input-wrapper input {
+    background: transparent;
+    border: 0;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    width: 272px;
+}
+
+.login-div ::-webkit-input-placeholder {
+    color: #cec8c8;
+    font-size: 16px;
+}
+.login-div input:focus {
+    outline: 0 none;
+}
+
+/* error message */
+#error-msg {
+    height: 12px;
+    color: #e91e63;
+    font-size: 10pt
+}
+
+
+/* result page */
+
+
+.result-div {
+    animation: showForm 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 -1px 2px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    height:476px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 24px 24px 16px;
+    padding-bottom: 0;
+    position: relative;
+    width: 272px;
+    white-space: normal;
+}
+@media screen and (min-height: 800px){
+    .result-div {
+        margin-top:160px !important;
+    }
+}
+
+.result-div .back-button {
+    background-color: #cdd0d3;
+    background-clip: border-box;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cdd0d3;
+    border-image: initial;
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    margin-right: 0px;
+    overflow: hidden;
+    outline: 0 none;
+    padding: 5px 0px;
+    position: absolute;
+    text-align: center;
+    width: 272px;
+    height: 48px;
+    bottom:32px;
+    left: 24px;
+}
+.result-div .back-button:hover {
+    background-color: #b8bdc2;
+    border-color: #b8bdc2;
+    transition:
+        background-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.5s
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+.result-div .back-button:focus {
+    box-shadow: inset 0 0 0 1px white;
+}
+
+.text-msg {
+    color: #333333;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+#clockResult {
+    color: #00bcd4;
+    font-size: 30px;
+    margin-left: auto;
+    text-align: center;
+    text-decoration: underline;
+}
