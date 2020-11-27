@@ -1,4 +1,3 @@
-# EmployeeClockinAndOut
 # Build an run for developement
 Inside code directory.
 
@@ -12,7 +11,6 @@ node index.js
 execute build-image.sh
 
 # Deploy with docker
-
 - cd to deploy script
 - update the config.json in `config` directory
 - execute deploy.sh
