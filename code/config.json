@@ -1,7 +1,0 @@
-{
-  "host": "database-mysql-1.cs7guzsyvr8k.us-east-1.rds.amazonaws.com",
-  "user": "admin",
-  "password": "gHSnupKYoCSPkHRAOkOQ",
-  "database": "test",
-  "port": 3306
-}
