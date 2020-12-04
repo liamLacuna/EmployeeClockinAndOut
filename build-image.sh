@@ -12,3 +12,4 @@ if [[ -n "$name_exist" ]]; then
 fi
 
 docker build -f docker/Dockerfile -t $image_name $workDir
+
