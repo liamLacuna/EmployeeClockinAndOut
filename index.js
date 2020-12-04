@@ -5,6 +5,7 @@ const app = express();
 const router = express.Router();
 
 let port = 3000;
+
 if (process.argv.length > 2)
     port = process.argv[2];
 
@@ -12,7 +13,6 @@ var mysql = require('mysql');
 
 connInfo = config;
 console.log(config);
-
 
 class SqlClient {
   constructor(connInfo) {
